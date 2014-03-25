@@ -56,7 +56,8 @@ if bifurcation==1
 		% plotting
 		plot(alpha*ones(1,10), x(1,iterations-9:iterations),'.k','MarkerSize',1)
 		line1 = sprintf('Bifurcation diagram for the Henon Map with %.0f iterations', iterations);
-		title({line1});
+		line2 = sprintf('b = %.2f', b);
+		title({line1, line2});
 		xlabel('a')
 		ylabel('x')
 		if drawing==1
